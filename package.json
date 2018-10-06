@@ -1,8 +1,30 @@
 {
-  "name": "bbam-rest-api",
+  "name": "bbam_restapi",
   "version": "0.0.1",
-  "description": "Starter project for an ES6 RESTful Express API",
-  "main": "dist",
+  "description": "Starter project for an ES6 RESTful Express API. http://git.io/express-es6-rest-api ```sh # Install dependencies npm install",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "compression": "^1.5.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "morgan": "^1.9.1",
+    "mysql2": "^1.6.1",
+    "resource-router-middleware": "^0.6.0",
+    "sequelize": "^4.39.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-core": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "eslint": "^5.6.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "nodemon": "^1.9.2"
+  },
   "scripts": {
     "dev": "nodemon -w src --exec \"babel-node src --presets es2015,stage-0\"",
     "build": "babel src -s -D -d dist --presets es2015,stage-0",
@@ -26,28 +48,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/developit/express-es6-rest-api.git"
+    "url": "git+https://github.com/SungBeom/BBAM_restAPI.git"
   },
-  "author": "Jason Miller <jason@developit.ca>",
+  "author": "",
   "license": "MIT",
-  "dependencies": {
-    "body-parser": "^1.13.3",
-    "compression": "^1.5.2",
-    "cors": "^2.7.1",
-    "express": "^4.13.3",
-    "morgan": "^1.8.0",
-    "resource-router-middleware": "^0.6.0"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.9.0",
-    "babel-core": "^6.9.0",
-    "babel-preset-es2015": "^6.9.0",
-    "babel-preset-stage-0": "^6.5.0",
-    "eslint": "^3.1.1",
-    "nodemon": "^1.9.2"
-  },
   "bugs": {
-    "url": "https://github.com/developit/express-es6-rest-api/issues"
+    "url": "https://github.com/SungBeom/BBAM_restAPI/issues"
   },
-  "homepage": "https://github.com/developit/express-es6-rest-api#readme"
+  "homepage": "https://github.com/SungBeom/BBAM_restAPI#readme"
 }
