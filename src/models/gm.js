@@ -13,6 +13,6 @@ export default (sequelize, DataType) => sequelize.define('GM', {
         defaultValue: 0
     },
     GM_RTN: {
-        type: DataType.INTEGER.UNSIGNED,
+        type: DataType.INTEGER.UNSIGNED
     }
 });
