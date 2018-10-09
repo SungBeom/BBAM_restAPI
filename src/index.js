@@ -25,9 +25,17 @@ app.use(bodyParser.json({
 
 // connect to db
 initializeDb((db) => {
-  console.log(db);
+
   // internal middleware
   app.use(middleware({ config, db }));
+  app.use(bodyParser.json());
+  app.use(bodyParser.urlencoded({extend: true}));
+  app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+    res.header('Access-Control-Allow-Headers', 'content-type, x-access-token');
+    next();
+  });
 
   // api router
   app.use('/api', api({ config, db }));

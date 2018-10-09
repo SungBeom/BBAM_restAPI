@@ -4,10 +4,12 @@
   "description": "Starter project for an ES6 RESTful Express API. http://git.io/express-es6-rest-api ```sh # Install dependencies npm install",
   "main": "index.js",
   "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.3",
     "compression": "^1.5.2",
     "cors": "^2.8.4",
     "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
     "morgan": "^1.9.1",
     "mysql2": "^1.6.1",
     "resource-router-middleware": "^0.6.0",
